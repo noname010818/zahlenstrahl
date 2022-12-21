@@ -1,0 +1,102 @@
+body {
+    font-family: "GrundschriftRegular";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+#name{
+    font-size: 2.5rem;
+}
+
+#exercise {
+    margin-top: 5%;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    text-align: center;
+    background-color: #bcfdff;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 5px solid  #00868b;
+    width: 52%; /* Could be more or less, depending on screen size */
+  }
+  /* The Close Button */
+  .close {
+    background-color: rgb(17, 192, 84);
+    color: rgb(0, 0, 0);
+    float: none;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+
+  #slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 1px; /* Specified height */
+    background: none; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 10px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+.line{
+    width: 0;
+    height: 10px;
+    margin: 5.42px;
+    padding: 0;
+    border: 1px solid black;
+    float: left;
+    margin-top: -5px;
+}
+
+#myRange{
+  border: 1px solid rgb(0, 0, 0);
+  float: left;
+}
+
+ 
