@@ -21,6 +21,8 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
     <!--Bootstrap ende-->
 
     <link
@@ -31,7 +33,7 @@
     />
     <link
       rel="stylesheet"
-      href="style.css"
+      href="stylesheet.css"
       type="text/css"
     />
   
@@ -76,11 +78,24 @@
     <div class="container text-center">
       <div class="container text-center">
         <h2 id="exercise"></h2>
+
+        <h2>Trage die Zahlen im Zahlenstrahl ein</h2>
+        <button
+          id="submitBtn" type="button" class="btn btn-success btn-lg left-icon-holder" onclick="submitBtnClicked()">
+        <i class="bi bi-check-all"></i>
+          Abgeben!
+        </button>
+
+        <button class="btn btn-primary btn-lg left-icon-holder" onclick="refreshBtnClicked()">
+          <i class="bi bi-arrow-clockwise"></i>
+          Neue Aufgabe
+        </button>
+        <div id = "thousand"></div>
+        <div id = "hundred"></div>
+        <div id = "solution"></div>
+
       </div>
-      <h1>Line</h1>
-        <div id="slidecontainer">
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onchange="print()">
-        </div>
+    
     </div>
   </body>
   <script type="text/javascript" src="index.js"></script>

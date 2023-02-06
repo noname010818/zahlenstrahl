@@ -1,0 +1,152 @@
+body {
+    font-family: "GrundschriftRegular";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+#name{
+    font-size: 2.5rem;
+}
+
+#exercise {
+    margin-top: 5%;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+  /* Modal Content/Box */
+  .modal-content {
+    text-align: center;
+    background-color: #bcfdff;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 5px solid  #00868b;
+    width: 52%; /* Could be more or less, depending on screen size */
+}
+  /* The Close Button */
+  .close {
+    background-color: rgb(17, 192, 84);
+    color: rgb(0, 0, 0);
+    float: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+
+/* Ab hier Zahlenstrahl */
+
+.timelineSegment {
+    height: 6px;
+    width: 10%;
+    background-color: #5eb3b6;
+    margin-top: 70px;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#thousand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.timelineSegment:hover{
+    background-color: red;
+}
+
+.bigLine{
+    width: 6px;
+    height: 20px;
+    background-color: black;
+    position: relative;
+    top: -5px;
+}
+
+.bigLine > div {
+    position: relative;
+    top: -30px;
+    left: -15px;
+    text-align: center;
+    width: 30px;
+}
+
+.smallLine{
+    width: 3px;
+    height: 15px;
+    background-color: black;
+    position: relative;
+    top: -3px;
+}
+
+.smallLineHundred{
+    width: 3px;
+    height: 15px;
+    background-color: black;
+    position: relative;
+    top: -3px;
+}
+
+.removeLine{
+    width: 3px;
+    height: 40px;
+    background-color: black;
+    position: relative;
+    top: -3px;
+}
+
+.removeLine:hover{
+    background-color: red;
+}
+
+.smallLineHundred:hover{
+    background-color: red;
+}
+
+.smallLineHundredBox{
+    border-color: black;
+    position: relative;
+    top: 25px;
+    left: -15px;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+}
+
+.timelineFull {
+    height: 6px;
+    width: 95%;
+    background-color: wheat;
+    margin-top: 120px;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#deleteBtn{
+    margin-left: 99%;
+    margin-top: -4%;
+    height: 50px;
+    width: 50px;
+}
